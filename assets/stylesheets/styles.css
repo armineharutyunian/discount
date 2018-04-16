@@ -51,10 +51,10 @@ footer .contacts-left .info, footer .contacts-left .info li {
 body {
     margin: 0;
     overflow-x: hidden;
-    max-width: 1900px;
+    min-width: 550px;
 }
 
-.s-main .logo, .s-main .market-btns, .s-about .about-wrapper, .s-mobile .mobile-wrapper, .s-contact .contact-wrapper, footer .icons, footer .contacts, footer .contacts-right, footer .copyright {
+.s-main .logo, .s-main .market-btns, .s-about .about-wrapper, .s-mobile .mobile-wrapper, .s-contact .contact-wrapper, footer .contacts, footer .contacts-right, footer .copyright {
     display: flex;
 }
 
@@ -63,7 +63,6 @@ body {
 ====================================================*/
 
 .s-main {
-    width: 100vw;
     background-image: url(../images/main-bck.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -71,7 +70,8 @@ body {
 }
 
 .main-wrapper {
-    width: 100%;
+    width: 100vw;
+    height: auto;
     padding: 180px 200px;
 }
 
@@ -109,7 +109,6 @@ body {
 
 .s-main .market-btns img {
     width: 245px;
-    height: 75px;
 }
 
 s-main .market-btns a {
@@ -124,12 +123,9 @@ s-main .market-btns a {
                     ABOUT SECTION
 ====================================================*/
 
-.s-about {
+.s-about .about-wrapper {
     width: 100vw;
     height: auto;
-}
-
-.s-about .about-wrapper {
     padding: 100px 200px;
     flex-direction: row;
     align-items: center;
@@ -162,8 +158,6 @@ s-main .market-btns a {
 ====================================================*/
 
 .s-mobile {
-    width: 100vw;
-    height: auto;
     background-image: url(../images/mobile-bck.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -171,6 +165,8 @@ s-main .market-btns a {
 }
 
 .s-mobile .mobile-wrapper {
+    width: 100vw;
+    height: auto;
     padding: 145px 200px 250px;
     flex-direction: row;
     align-items: center;
@@ -201,12 +197,10 @@ s-main .market-btns a {
                     CONTACT SECTION
 ====================================================*/
 
-.s-contact {
-    width: 100vw;
-    height: auto;
-}
 
 .s-contact .contact-wrapper {
+    width: 100vw;
+    height: auto;
     padding: 250px 200px 250px 80px;
     justify-content: space-between;
     align-items: flex-start;
@@ -252,29 +246,23 @@ s-main .market-btns a {
                     FOOTER
 ====================================================*/
 
-footer {
-    width: 100vw;
-    height: auto;
-}
-
 footer .icons {
-    width: 100%;
+    width: 100vw;
     height: 155px;
-    flex-direction: row;
-    align-items: center;
+    padding-left: calc((100% - 350px)/6);
     overflow: hidden;
+    padding-top: 40px;
     background-color: #292929;
 }
 
 footer .icons a {
-    width: 70px;
     height: 70px;
-    margin-left: 130px;
-    margin-right: 130px;
+    display: block;
     cursor: pointer;
 }
 
 footer .contacts {
+    width: 100vw;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -345,6 +333,7 @@ footer .contacts-right .social-icons img:last-child {
 }
 
 footer .copyright {
+    width: 100vw;
     height: 40px;
     align-items: center;
     background-color: #171717;
@@ -441,8 +430,115 @@ footer .copyright span {
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 960px) {
+    .main-wrapper, .s-about .about-wrapper, .s-mobile .mobile-wrapper, .s-contact .contact-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .s-main .logo {
+        margin-bottom: 60px;
+    }
+
+    .s-main .logo img {
+        width: 45px;
+    }
+
+    .s-main .logo h1 {
+        font-size: 55px;
+    }
+
+    .s-main .description span {
+        font-size: 25px;
+    }
+
+    .s-main .market-btns img {
+        width: 135px;
+    }
+
+    .s-main .description {
+        margin-bottom: 30px;
+        width: 300px;
+    }
+
+    .s-about .about-right h1, .s-mobile .mobile-left h1, .s-contact .contact-right h1 {
+        font-size: 25px;
+    }
+
+    .s-about .about-right p, .s-mobile .mobile-left p, .s-contact .contact-right p, footer .contacts-left .info li {
+        font-size: 18px;
+    }
+
+    .s-contact .contact-right a {
+        width: 180px;
+        height: 40px;
+        padding: 10px 30px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
     footer .contacts-left span {
+        font-size: 20px;
+    }
+
+    footer .contacts {
+        padding: 100px 60px 65px;
+    }
+
+    footer .copyright span {
+        font-size: 16px;
+    }
+
+    .slick-list {
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .s-about .about-wrapper, .s-mobile .mobile-wrapper, .s-contact .contact-wrapper, footer .contacts {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .s-about .about-right, .s-mobile .mobile-left, .s-contact .contact-right {
+        text-align: center;
+    }
+
+    .s-about .about-right h1, .s-mobile .mobile-left h1, .s-contact .contact-right h1 {
         font-size: 30px;
+    }
+
+    .s-about .about-right p, .s-mobile .mobile-left p, .s-contact .contact-right p, footer .contacts-left .info li {
+        font-size: 20px;
+    }
+
+    .s-mobile .mobile-right img {
+        padding-top: 20px;
+    }
+
+    .s-contact .contact-wrapper {
+        padding: 30px 50px 100px 30px;
+    }
+
+    footer .icons, footer .copyright {
+        width: 100%;
+    }
+
+    footer .contacts {
+        text-align: center;
+    }
+
+    footer .contacts {
+        text-align: center;
+        padding: 30px 60px 40px;
+    }
+
+    footer .contacts-right {
+        margin-top: 20px;
+    }
+
+    footer .copyright span {
+        font-size: 20px;
     }
 }
