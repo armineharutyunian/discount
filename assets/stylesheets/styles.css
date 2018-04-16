@@ -1,0 +1,452 @@
+/*====================================================
+                   FONTS
+====================================================*/
+
+@font-face {
+    font-family: DejaVu;
+    src: url(../fonts/DejaVuSans.ttf);
+}
+
+@font-face {
+    font-family: DejaVuBold;
+    font-weight: bold;
+    src: url(../fonts/DejaVuSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: NotoSansBold;
+    font-weight: bold;
+    src: url(../fonts/NotoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+.s-main .logo h1, .s-main .description span, .s-about .about-right h1, .s-mobile .mobile-left h1, .s-contact .contact-right h1, .s-contact .contact-right a {
+    font-family: 'DejaVuBold';
+}
+
+.s-about .about-right p, .s-mobile .mobile-left p, .s-contact .contact-right p {
+    font-family: 'DejaVu';
+}
+
+footer .contacts-left span, footer .contacts-right span {
+    font-family: 'NotoSansBold';
+}
+
+footer .contacts-left .info, footer .contacts-left .info li {
+    font-family: 'OpenSans';
+}
+
+/*====================================================
+                  GLOBAL STYLES
+====================================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 1900px;
+}
+
+.s-main .logo, .s-main .market-btns, .s-about .about-wrapper, .s-mobile .mobile-wrapper, .s-contact .contact-wrapper, footer .icons, footer .contacts, footer .contacts-right, footer .copyright {
+    display: flex;
+}
+
+/*====================================================
+                    MAIN SECTION
+====================================================*/
+
+.s-main {
+    width: 100vw;
+    background-image: url(../images/main-bck.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.main-wrapper {
+    width: 100%;
+    padding: 180px 200px;
+}
+
+.s-main .logo {
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 375px;
+}
+
+.s-main .logo img {
+    width: 90px;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+.s-main .logo h1 {
+    color: #fbfbfb;
+    font-size: 99px;
+    margin: 0;
+}
+
+.s-main .description {
+    margin-bottom: 50px;
+    width: 480px;
+}
+
+.s-main .description span {
+    font-size: 40px;
+    color: #fbfbfb;
+}
+
+.s-main .market-btns {
+    flex-direction: row;
+}
+
+.s-main .market-btns img {
+    width: 245px;
+    height: 75px;
+}
+
+s-main .market-btns a {
+    cursor: pointer;
+}
+
+.s-main .market-btns a:first-child {
+    margin-right: 25px;
+}
+
+/*====================================================
+                    ABOUT SECTION
+====================================================*/
+
+.s-about {
+    width: 100vw;
+    height: auto;
+}
+
+.s-about .about-wrapper {
+    padding: 100px 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s-about .about-left img {
+    width: 615px;
+    height: auto;
+}
+
+.s-about .about-right {
+    color: #272727;
+    width: 775px;
+    text-align: right;
+}
+
+.s-about .about-right h1 {
+    font-size: 38px;
+    margin: 0px 0px 40px;
+}
+
+.s-about .about-right p {
+    font-size: 26px;
+    margin: 0px;
+}
+
+/*====================================================
+                    MOBILE SECTION
+====================================================*/
+
+.s-mobile {
+    width: 100vw;
+    height: auto;
+    background-image: url(../images/mobile-bck.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.s-mobile .mobile-wrapper {
+    padding: 145px 200px 250px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s-mobile .mobile-left {
+    color: white;
+    width: 775px;
+}
+
+.s-mobile .mobile-left h1 {
+    font-size: 38px;
+    margin: 0px 0px 40px;
+}
+
+.s-mobile .mobile-left p {
+    font-size: 26px;
+    margin: 0px;
+}
+
+.s-mobile .mobile-right img {
+    width; 513px;
+    height: auto;
+}
+
+/*====================================================
+                    CONTACT SECTION
+====================================================*/
+
+.s-contact {
+    width: 100vw;
+    height: auto;
+}
+
+.s-contact .contact-wrapper {
+    padding: 250px 200px 250px 80px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.s-contact .contact-left img {
+    width: 850px;
+    height: auto;
+}
+
+.s-contact .contact-right {
+    width: 775px;
+    color: #272727;
+    text-align: right;
+}
+
+.s-contact .contact-right h1 {
+    font-size: 38px;
+    margin: 0px 0px 40px;
+}
+
+.s-contact .contact-right p {
+    font-size: 26px;
+    margin: 0px;
+}
+
+.s-contact .contact-right a {
+    width: 240px;
+    height: 55px;
+    padding: 15px 30px;
+    text-align: center;
+    color: white;
+    background-color: #af1986;
+    font-size: 24px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 55px;
+    border-radius: 10px;
+}
+
+/*====================================================
+                    FOOTER
+====================================================*/
+
+footer {
+    width: 100vw;
+    height: auto;
+}
+
+footer .icons {
+    width: 100%;
+    height: 155px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 130px;
+    background-color: #292929;
+}
+
+footer .icons a {
+    width: 70px;
+    height: 70px;
+    margin-left: 130px;
+    margin-right: 130px;
+    cursor: pointer;
+}
+
+footer .contacts {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 455px 115px;
+    background-image: url(../images/footer-bck.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer .contacts-left {
+    width: 360px;
+    color: white;
+}
+
+footer .contacts-left span {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+footer .contacts-left .info {
+    list-style: none;
+    padding: 0px;
+    margin: 35px 0px 0px;
+}
+
+footer .contacts-left .info li {
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+footer .contacts-left .market-btns img {
+    width: 125px;
+}
+
+footer .contacts-left .market-btns a {
+    display: inline-block;
+}
+
+footer .contacts-left .market-btns a:first-child {
+    margin-right: 20px;
+}
+
+footer .contacts-right {
+    width: 300px;
+    height: 110px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+footer .contacts-right span {
+    color: #e0e0e0;
+    font-size: 16px;
+    margin-right: 18px;
+}
+
+footer .contacts-right .social-icons img {
+    width: 30px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+footer .contacts-right .social-icons img:last-child {
+    margin-right: 0px;
+}
+
+footer .copyright {
+    height: 40px;
+    align-items: center;
+    background-color: #171717;
+    justify-content: center;
+}
+
+footer .copyright span {
+    color: #939292;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+/*====================================================
+                    MEDIA QUERIES
+====================================================*/
+
+@media screen and (max-width: 1600px) {
+    .main-wrapper {
+        padding: 130px 100px;
+    }
+
+    .s-main .logo {
+        margin-bottom: 150px;
+    }
+
+    .s-main .logo img {
+        width: 60px;
+    }
+
+    .s-main .logo h1 {
+        font-size: 75px;
+    }
+
+    .s-about .about-left img {
+        width: 500px;
+    }
+
+    .s-about .about-wrapper {
+        padding: 100px;
+    }
+
+    .s-about .about-right, .s-mobile .mobile-left, .s-contact .contact-right {
+        width: 400px;
+    }
+
+    .s-mobile .mobile-wrapper {
+        padding: 145px 100px 250px;
+    }
+
+    .s-contact .contact-left img {
+        width: 550px;
+    }
+
+    .s-contact .contact-wrapper {
+        padding: 150px 100px 150px 80px;
+    }
+
+    footer .contacts {
+        padding: 100px 250px 65px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .s-main {
+        background-position: center;
+    }
+
+    .main-wrapper {
+        padding: 50px 70px;
+    }
+
+    .s-about .about-wrapper {
+        padding: 50px;
+    }
+
+    .s-about .about-left img, .s-mobile .mobile-right img, .s-contact .contact-left img {
+        width: 400px;
+    }
+
+    .s-about .about-right, .s-mobile .mobile-left, .s-contact .contact-right {
+        width: 500px;
+    }
+
+    .s-mobile .mobile-wrapper {
+        padding: 75px 100px 200px;
+    }
+
+    .s-contact .contact-wrapper {
+        padding: 100px 50px 100px 30px;
+    }
+
+    footer .contacts {
+        padding: 100px 150px 65px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    footer .contacts {
+        padding: 50px 150px 15px;
+    }
+
+    footer .contacts-left span {
+        font-size: 25px;
+    }
+}
