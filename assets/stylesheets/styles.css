@@ -262,7 +262,7 @@ footer .icons {
     height: 155px;
     flex-direction: row;
     align-items: center;
-    padding: 0px 130px;
+    overflow: hidden;
     background-color: #292929;
 }
 
@@ -442,11 +442,7 @@ footer .copyright span {
 }
 
 @media screen and (max-width: 540px) {
-    footer .contacts {
-        padding: 50px 150px 15px;
-    }
-
     footer .contacts-left span {
-        font-size: 25px;
+        font-size: 30px;
     }
 }

@@ -25,16 +25,6 @@ $(document).ready(function(){
                     autoplaySpeed: 2000,
                     dots: false
                 }
-            },
-            {
-                breakpoint: 1050,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    dots: false
-                }
             }
         ]
 });
